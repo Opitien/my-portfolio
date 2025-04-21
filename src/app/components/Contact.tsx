@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
       <div className="flex justify-center space-x-6 text-blue-600">
         <a href="mailto:opitiene@gmail.com" className="hover:underline">Email</a>
         <a href="https://github.com/opitienejiro" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
-        <a href="https://linkedin.com/in/opitienejiro" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn</a>
+        <a href="https://linkedin.com/in/Opitien" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn</a>
       </div>
     </section>
   );

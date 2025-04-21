@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
     >
       <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -77,7 +77,6 @@ const Projects: React.FC = () => {
                 GitHub
               </a>
             </div>
-            {/* Decorative Layer Effect */}
             <div className="absolute inset-0 rounded-xl border border-purple-400 opacity-10 pointer-events-none" />
           </div>
         ))}

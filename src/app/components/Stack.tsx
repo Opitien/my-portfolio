@@ -3,7 +3,7 @@ import styles from "./Stack.module.css";
 
 const Stack: React.FC = () => {
   return (
-    <section id="stack" className={styles.stackSection}> {/* Added id here */}
+    <section id="stack" className={styles.stackSection}>
       <h2 className={styles.heading}>Stack</h2>
       <div className={styles.grid}>
         <div className={styles.iconBox}>
@@ -33,6 +33,10 @@ const Stack: React.FC = () => {
         <div className={styles.iconBox}>
           <img src="/gnubash.svg" alt="Bash" />
           <p>Bash</p>
+        </div>
+        <div className={styles.iconBox}>
+          <img src="/git.svg" alt="Git" />
+          <p>Git</p>
         </div>
       </div>
     </section>

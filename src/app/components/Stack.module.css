@@ -16,11 +16,19 @@
   color: #fff;
 }
 
+/* Responsive Grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 2rem;
   justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 by 3 on smaller screens */
+    gap: 1.5rem;
+  }
 }
 
 .iconBox {
@@ -29,6 +37,7 @@
   align-items: center;
   color: #fff;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .iconBox img {
@@ -54,5 +63,3 @@
     transform: translateY(0px);
   }
 }
-
-  
