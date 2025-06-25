@@ -20,10 +20,15 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-lg">
-          <a href="#about" className="hover:text-gray-300 transition">About</a>
-          <a href="#projects" className="hover:text-gray-300 transition">Projects</a>
-          <a href="#stack" className="hover:text-gray-300 transition">Stack</a>
-          <a href="#contact" className="hover:text-gray-300 transition">Contact</a>
+          <a href="#about" className="relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-500 hover:after:w-full">
+            About
+          </a>
+          <a href="#projects" className="relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-500 hover:after:w-full">
+            Projects
+          </a>
+          <a href="#contact" className="relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-500 hover:after:w-full">
+            Contact
+          </a>
         </nav>
       </div>
 
@@ -32,7 +37,7 @@ const Navbar: React.FC = () => {
         className={`fixed top-0 left-0 h-full w-64 bg-gradient-to-br from-purple-800 to-purple-600 text-white shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between items-center px-6 py-4 border-b border-purple-400">
-          <h2 className="text-lg font-semibold">Menu</h2>
+          <h2 className="text-lg font-semibold">Opitien</h2>
           <button onClick={toggleMenu}>
             <FiX size={24} />
           </button>
@@ -40,7 +45,6 @@ const Navbar: React.FC = () => {
         <nav className="flex flex-col space-y-4 p-6 text-lg">
           <a href="#about" onClick={toggleMenu} className="hover:text-gray-300 transition">About</a>
           <a href="#projects" onClick={toggleMenu} className="hover:text-gray-300 transition">Projects</a>
-          <a href="#stack" onClick={toggleMenu} className="hover:text-gray-300 transition">Stack</a>
           <a href="#contact" onClick={toggleMenu} className="hover:text-gray-300 transition">Contact</a>
         </nav>
       </div>
